@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  /* Fondo oscuro similar a Spotify */
+  color: #ffffff;
+  /* Texto en blanco */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* Centra el contenido */
+}
+.container {
+  width: 350px;
+  /* Ancho del contenedor */
+  margin: 0 auto;
+  /* Centra el contenedor horizontalmente */
+  padding: 40px;
+  background-color: #282828;
+  /* Fondo del contenedor */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Sombra ligera */
+  position: relative;
+}
+.input-box {
+  position: relative;
+  margin-bottom: 7px;
+  padding-bottom: 20px;
+}
+.input-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #1db954;
+  border-radius: 50px;
+  background-color: #121212;
+  color: #ffffff;
+  cursor: pointer;
+}
+.input-box i {
+  color: #1db954;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-5%);
+  transition: all 0.3s ease;
+  right: 0px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+h1 {
+  color: #1db954;
+  /* Color de título similar a Spotify */
+}
+
+.input-box label {
+  display: block;
+  /* Hace que las etiquetas se muestren en una nueva línea*/
+  margin-top: 10px;
+}
+
+.input-box input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #1db954;
+  border-radius: 50px;
+  background-color: #121212;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.input-box,
+input:focus {
+  outline: none;
+}
+
+.input-box i {
+  color: #1db954;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-5%);
+  transition: all 0.3s ease;
+  right: 0px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.input-box.ok input {
+  border: 0.1px solid;
+  border-color: #1db954;
+  /*08ffc8*/
+}
+
+.input-box.falla input {
+  border: 0.1px solid;
+  border-color: #fe5f55;
+}
+
+.input-box.ok i {
+  color: #1db954;
+  /*08ffc8*/
+}
+
+.input-box.falla i {
+  color: #fe5f55;
+}
+
+input[type="submit"] {
+  width: 106%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #1db954;
+  /* Color de fondo del botón */
+  color: #ffffff;
+  /* Color del texto del botón */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #1a9540;
+  /* Cambia el color al pasar el cursor sobre el botón */
+}
+
+a {
+  text-decoration: none;
+  /* Quita el subrayado de los enlaces */
+  color: #1db954;
+  /* Color de los enlaces similar a Spotify */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Subraya el enlace al pasar el cursor */
+}
+
+.input-box p {
+  visibility: hidden;
+  position: absolute;
+  font-size: small;
+  font-weight: 500;
+  text-align: left;
+}
+
+.input-box.falla p {
+  visibility: visible;
+  color: #e74c3c;
+}
